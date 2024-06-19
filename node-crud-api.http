@@ -1,9 +1,3 @@
-# Description
-
-Ajudando uma amiga
-
-# Nodejs-API
-
 ### CRIA UM NOVO ITEM
 post http://localhost:3001/create
 Content-Type:application/json
@@ -16,14 +10,16 @@ Content-Type:application/json
     "enabled": true
 }
 
+
+### SEPARAR A REQUEST > OBRIGATORIO
 ### TRAS TODOS OS DADOS
 get http://localhost:3001/find
 
-
+### SEPARAR A REQUEST > OBRIGATORIO
 ### BUSCA PELO NOME
 get http://localhost:3001/findbyname?name=tay
 
-
+### SEPARAR A REQUEST > OBRIGATORIO
 ### EDITA PELO ID
 put http://localhost:3001/edit?_id=66721e9fe06af61611ca9337
 Content-Type:application/json
@@ -36,6 +32,8 @@ Content-Type:application/json
     "enabled": true
 }
 
-
+### SEPARAR A REQUEST > OBRIGATORIO
 ### DELETA PELO ID
 delete http://localhost:3001/delete?_id=66721e9fe06af61611ca9337
+
+### SEPARAR A REQUEST > OBRIGATORIO
